@@ -1,0 +1,289 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+#logo p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#navbar a {
+    font-size: 14px;
+    color: #4A5D56;
+    text-decoration: none;
+}
+
+#consultation-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+
+    background-color: #2F5D50;
+    color: white;
+}
+
+/* Hero */
+
+#hero {
+    background: linear-gradient(to bottom, #E7EFE9, #F7EBDD);
+    margin: 0px 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    min-height: 400px;
+    padding: 30px 60px;
+}
+
+#hero-text {
+    flex: 1;
+}
+
+#hero-text h1 {
+    font-size:2.3rem;
+    margin-bottom: 60px;
+    color: #19382E;
+
+}
+#location {
+    display: flex;
+    justify-content: flex-start;
+}
+#location-text {
+    color: #2F5D50;
+    font-size: 10px;
+    margin-left: 5px;
+}
+#orange-ball {
+    width: 8px;
+    height: 8px;
+    background-color: #D48357;
+    border-radius: 50%;
+}
+
+#hero-text p {
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+#hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+
+    border-radius: 25px 25px 25px 25px;
+}
+
+#hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#hero-buttons button {
+    padding: 14px 25px;
+    border-radius: 25px;
+    border-color: transparent;
+    background-color:#D48357;
+}
+
+#hero-buttons button:first-child {
+    color: white;
+}
+
+#hero-buttons button:last-child {
+    background-color: transparent;
+    color: #2F5D50;
+}
+
+/* Second section */
+#what-we-do {
+    color: #D07850;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#services-intro {
+    padding: 50px 60px 50px;
+    text-align: center;
+}
+
+#services-intro h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.information-text {
+    font-size: 13px;
+    color: #64736E;
+}
+
+
+
+/* Services */
+
+#benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 10px 40px 40px;
+}
+
+.service-block {
+    padding: 30px;
+}
+
+.service-block h3 {
+    color: #19382E;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service-block p {
+    min-height: 70px;
+    margin-bottom: 25px;
+    color: #64736E;
+}
+
+.learn-more {
+    font-size: 12px;
+    display: inline-block;
+    color: #2F5D50;
+    text-decoration: none;
+}
+
+
+/* Testimonial */
+
+#testimonial {
+    margin: 5px 60px;
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: #19382E;
+}
+
+#review-text{
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#review-person {
+    margin-top: 20px;
+
+    display: flex;
+    color: white;
+}
+#review-name {
+    font-size: 12px;
+    font-style: bold;
+}
+#review-location {
+    font-size: 10px;
+}
+#orange-ball-big{
+    width: 23px;
+    height: 23px;
+    background-color: #DfA17A;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* Call to action*/
+
+#cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px 60px;
+    text-align: center;
+}
+
+#cta h2 {
+    color:#19382E;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+#cta p {
+    max-width: 550px;
+    margin-bottom: 30px;
+    color: #64736E;
+    font-size: 0.8rem;
+}
+
+#cta button {
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #D48357;
+    color: white;
+}
+
+
+/* Footer */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 60px;
+    color: #72807B;
+}
+
+#footer p {
+    font-size: 12px;
+}
+
+#footer nav {
+    display: flex;
+    gap: 20px;
+}
+#social-links a{
+    font-size: 12PX;
+    color: #72807B;
+    text-decoration: none;
+}
+
+/* Responsive */
