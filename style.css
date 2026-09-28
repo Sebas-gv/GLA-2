@@ -1,5 +1,7 @@
 
 * {
+    font-family: 'Inter';
+    font-size: clamp(0.5rem, 3vh, 1rem);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
