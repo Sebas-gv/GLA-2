@@ -1,4 +1,7 @@
 
+:root {
+ --HoverButton: rgb(77, 32, 7);
+}
 * {
     font-family: 'Inter';
     font-size: clamp(0.5rem, 3vh, 1rem);
@@ -8,7 +11,6 @@
 }
 
 /* Header */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -23,8 +25,8 @@ header {
 }
 
 #logo img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
 
@@ -43,6 +45,12 @@ header {
     font-size: 14px;
     color: #4A5D56;
     text-decoration: none;
+}
+
+#consultation-button:hover{
+    cursor: pointer;
+    background-color: var(--HoverButton);
+    transition: color 0.2s ease;
 }
 
 #consultation-button {
@@ -74,7 +82,7 @@ header {
 }
 
 #hero-text h1 {
-    font-size:2.3rem;
+    font-size:3rem;
     margin-bottom: 60px;
     color: #19382E;
 
@@ -107,6 +115,11 @@ header {
     height: auto;
 
     border-radius: 25px 25px 25px 25px;
+}
+#hero-buttons button:hover {
+    cursor: pointer;
+    background-color: var(--HoverButton);
+    transition: color 0.2s ease;
 }
 
 #hero-buttons {
@@ -162,11 +175,11 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    padding: 10px 40px 40px;
+    padding: 20px 60px 50px;
 }
 
 .service-block {
-    padding: 30px;
+    padding: 40px;
 }
 
 .service-block h3 {
@@ -189,6 +202,9 @@ header {
     text-decoration: none;
 }
 
+img.img-benefits {
+    height: 30px;
+}
 
 /* Testimonial */
 
@@ -252,6 +268,12 @@ header {
     font-size: 0.8rem;
 }
 
+#cta button:hover{
+    cursor: pointer;
+    background-color: var(--HoverButton);
+    transition: color 0.2s ease;
+}
+
 #cta button {
     padding: 14px 28px;
 
@@ -288,4 +310,123 @@ header {
     text-decoration: none;
 }
 
-/* Responsive */
+    /* Responsive */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        padding: 20px 30px;
+    }
+
+    #navbar {
+        gap: 15px;
+    }
+
+    #navbar a {
+        font-size: 12px;
+    }
+
+    #consultation-button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+
+    /* Hero */
+
+    #hero {
+        margin: 0 20px;
+        padding: 40px 30px;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #hero-text {
+        width: 100%;
+    }
+
+    #location {
+        justify-content: center;
+    }
+
+    #hero-text h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    #hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hero-buttons {
+        justify-content: center;
+    }
+
+    #hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #hero-image img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+
+    /* Services intro */
+
+    #services-intro {
+        padding: 40px 30px;
+    }
+
+
+    /* Services */
+
+    #benefits {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px 30px 30px;
+    }
+
+    .service-block {
+        text-align: center;
+        padding: 25px;
+    }
+
+
+    /* Testimonial */
+
+    #testimonial {
+        margin: 10px 30px;
+        padding: 30px;
+    }
+
+    #review-text {
+        font-size: 14px;
+    }
+
+
+    /* CTA */
+
+    #cta {
+        padding: 70px 30px;
+    }
+
+    #cta h2 {
+        font-size: 30px;
+    }
+
+
+    /* Footer */
+
+    #footer {
+        padding: 25px 30px;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
